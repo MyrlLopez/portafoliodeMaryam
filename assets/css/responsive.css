@@ -1,0 +1,117 @@
+.layout__menu-toggle{
+    display: none;
+}
+
+@media (max-width: 1490px) {
+    body{
+        padding: 0;
+    }
+    .layout{
+        min-width: auto;
+        width: 85%;
+    }
+    .services__container{
+        flex-direction: column;
+      }
+    
+}
+
+@media (max-width: 1320px) {
+      .layout{
+        width: 89%;
+        margin-left: 3rem;
+        
+      }
+      
+}
+@media (max-width: 1160px) {
+    .layout{
+      width: 85%;
+      margin-left: 4rem;
+  }
+
+
+  
+}
+
+@media (max-width: 1060px) {
+    body{
+        background-image: none;
+        position: static;
+    }
+    .layout{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+        grid-template-areas: "content";
+        grid-template-columns: 100%;
+    }
+    .layout__menu-toggle{
+        display: none;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 4.8rem;
+        height: 4.8rem;
+        line-height: 4.8rem;
+        font-size: 2rem;
+        text-align: center;
+        background-color: var(--color-secondary);
+        color: var(--color-principal);
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: all 360ms ease-in-out;
+    }
+    .fa-xmark{
+        display: none;
+    }
+
+    .layout__aside{
+        display: none;
+        position: absolute;
+        max-width: 330px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+  
+}
+
+@media (max-width: 585px){
+    .about__personal-info{
+        flex-direction: column;
+    }
+    .personal-info__data{
+        flex-basis: 100%;
+        padding: 0;
+        margin-top: 2rem;
+    }
+    .contact__container{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px){
+    .page__name{
+        font-size: 4rem;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .form__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .form__left{
+        flex-basis: 100%;
+        margin-right: 0;
+
+    }
+    .form__right{
+        flex-basis: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
